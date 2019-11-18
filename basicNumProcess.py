@@ -32,7 +32,7 @@ def range(ord_list):
     ord_list.quartile"""    # Could try and make it work for an odd data set
 
 def mode(ord_list):
-    mod = statistics.mode(ord_list) #Throws error if number of modes > 1. Needs fixing
+    mod = statistics.mode(ord_list) #Throws error if number of modes > 1. Needs fixing (Could use 'try' and 'except')
     modstr = str(mod)
     print("The mode is: " + modstr)
 
