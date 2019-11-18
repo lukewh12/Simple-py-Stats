@@ -1,5 +1,7 @@
 import statistics
 
+# Add Standard Deviation
+# Add IQR, UQ, LQ 
 # Creating an ordered number line from a given number list
 ord_list = []
 
