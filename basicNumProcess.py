@@ -17,6 +17,7 @@ def mean(ord_list):
     mean = sum(ord_list) / len(ord_list)
     meanstr = str(mean)
     print("The mean is: " + meanstr)
+    return mean
 
 def median(ord_list):
     med = statistics.median(ord_list)
@@ -34,12 +35,38 @@ def range(ord_list):
 def mode(ord_list):
     mod = statistics.mode(ord_list) #Throws error if number of modes > 1. Needs fixing (Could use 'try' and 'except')
     modstr = str(mod)
-    print("The mode is: " + modstr)
+    if mod != int():
+        print("No Mode")
 
+def variance(ord_list):
+    average = float(mean(ord_list))
+    print("The average is: " + str(average))
+    numx = 0
+    sigma = sum(ord_list)
+    print("Sigma is: " + str(sigma))
+    denominator = len(ord_list) - 1
+    print("Denominator is: " + str(denominator))
+    for i in ord_list:
+        numz = i - average
+        print("Numz: " + str(i) + " - " + str(average))
+        numx += numz
+        print("Numx: " + str(numx))
+    numerator = sigma * numx
+    print("Numerator is: " + str(numerator))
+    var = numerator / denominator
+    print("The varience is " + str(var))
+    return var
+
+#def standard_deviation():
+         
 def r_m_m(ord_list):
     mean(ord_list)
     median(ord_list)
     range(ord_list)
-    mode(ord_list)
-
+    if len(set(ord_list)) != len(ord_list):
+        mode(ord_list)
+    else:
+        print("There is no mode")    
+    variance(ord_list)
+    
 r_m_m(ord_list)
