@@ -1,6 +1,5 @@
 import statistics
 
-# Add Standard Deviation
 # Add IQR, UQ, LQ 
 # Creating an ordered number line from a given number list
 ord_list = []
@@ -23,7 +22,7 @@ def median(ord_list):
     medstr = str(med)
     print("The median is: " + medstr)
 
-def range(ord_list):
+def difference(ord_list):
     rng = ord_list[-1] - ord_list[0]
     rngstr = str(rng)
     print("The range is: " + rngstr)
@@ -67,7 +66,7 @@ def standard_deviation():
 def r_m_m(ord_list):
     mean(ord_list)
     median(ord_list)
-    range(ord_list)
+    difference(ord_list)
     if len(set(ord_list)) != len(ord_list):
         mode(ord_list)
     else:
