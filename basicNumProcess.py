@@ -80,19 +80,9 @@ def gcd(ord_list): # Will only find the GCD of 2 numbers
         greatest_common_devisor = B
     if B == 0:
         greatest_common_devisor = A
-    while notprime = True:
+    while notprime == True:
         for y in primelist:
             if A > y:
-                bisect_left(primelist, y)
-            if B > y:
-                bisect_left(primelist, y)
-            
-
-
-             
-
-
-
 
 def r_m_m(ord_list):
     mean(ord_list)
