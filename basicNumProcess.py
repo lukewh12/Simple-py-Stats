@@ -63,7 +63,8 @@ def standard_deviation():
     sqrt = variance(ord_list)**(0.5)
     print("The standard deviation is: " + str(sqrt))
 
-def gcd(ord_list): # Will only find the GCD of 2 numbers
+
+"""def gcd(ord_list): # Will only find the GCD of 2 numbers
     primelist = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101]
     greatest_common_devisor = 0
     AA = 0
@@ -83,7 +84,7 @@ def gcd(ord_list): # Will only find the GCD of 2 numbers
     while notprime == True:
         for y in primelist:
             if A > y:
-
+"""
 def r_m_m(ord_list):
     mean(ord_list)
     median(ord_list)
@@ -96,3 +97,7 @@ def r_m_m(ord_list):
     standard_deviation()
     
 r_m_m(ord_list)
+
+if __name__ == "__main__":
+    pass
+
